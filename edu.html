@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>   
+<head>
+    <title>Eric Smith Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7da1bfac44.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class = "gridParent">
+    <div class = "redBlock"></div>
+    <div class = "yellowBlock blue"></div>
+    <div class = "header HblackLineA" id = "myHeader">
+      <h3 class="port eric">ERIC</h3>
+      <h3 class="port">SMITH</h3>
+      <h3 class="port">PORTFOLIO</h3>
+    </div>
+    <div class="blackLineExtra"></div>
+    <div class="about">
+        <h1 class="about">Department of Education</h1>
+        <h4 class="about">Responsive Redesign</h4>
+    </div>
+    <div class="study">
+      <h2 class="element">Overview:</h2>
+      <p class="element">Public education is, in my opinion, the greatest resource the US Government provides. As such, I considered very carefully the audience for this site and the services it provides.</p>
+      <img class="caseImage element" src="images/ed-desk.png">
+      <h2 class="element">UX Process:</h2>
+      <p class="element">As with virtually any government website, ed.gov was not necessarily designed with usability first in mind. These sites are often built off of ancient early-internet foundations, and suffer from ever-expanding databases that are increasingly difficult to navigate. Naturally the path forward presented itself through interviews and research: Make it easier to find what you’re looking for. This approach led to an updated user journey and site map, which took the existing information architecture and condensed it to its essential elements.</p>
+    <img class="caseImage element" src="images/ed-persona.png">
+    <h2 class="element">UI Design:</h2>
+    <p class="element">As a general guideline, I wanted to keep the design as clean as possible. I’m not marketing kids’ meals here, this site provides an important government service, and I wanted to make sure every part of my design was in line with that vision. For color, I chose a monochromatic palette of relatively muted shades. For typography, projecting a sophisticated style while retaining readability was the name of the game. In this design exercise, it was also important to ensure everything worked across both desktop and mobile versions. These aesthetic choices are reflected in the style sheet below, which was referenced often throughout design.</p>
+    <img class="caseImage element" src="images/ed-style.png">
+    <h2 class="element">Conclusion:</h2>
+    <p class="element">As someone more interested in the fun and friendly side of things, getting out of my comfort zone with this project taught me a lot. There would be serious implications to bad design when it came to financial aid resources, so the user flow had to be precise. No time to be cute about it, the buttons should say exactly where they go. For me it's been a pleasure learning the particular design considerations of every project.</p>
+    <img class="caseImage element" src="images/ed-mobile.png">
+    </div>
+    <div class = "VblackLine">
+      <h3 class = "verText">VALLEY YOUTH THEATRE</h3></div>
+      <div class="HblackLineC"><h3>TOOLS</h3></div>
+      <div class="toolsBlock">
+        <img class="toolPic" src="images/figma.svg">
+        <img class="toolPic" src="images/miro.png">
+      </div>
+    <div class = "blueBlock yellow"></div>
+    <div class = "HblackLineB"></div>
+    <div class="works">
+      
+    </div>
+  </section>
+  <footer>
+    <div class="footerBlackLine"><h3 class="">RESUME</h3></div>
+    
+    <section class="bottom">
+      <ul>
+        <li><a href="mailto: mrericthesmith@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/eric-smith-275bb9120/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/itsericsmooth" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://twitter.com/ericthesmith" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/itsericsmooth/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://open.spotify.com/artist/0FeB3XN2sHFQuPIeW6xOfr?si=ajxFCA1TS6OaElPvkPUu7g" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></a></i></li>
+    </ul>
+<div class="footerVblackLine"></div>
+<div class="copyright">
+    <i class="fas fa-copyright"></i>
+    <div class="whiteChunk">
+    <p>Eric Smith 2021</p>
+</div></div>
+    </section>
+  </footer>
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    var extraSticky = 15;
+    
+    if (window.innerWidth > 1000) {
+      extraSticky = 5;
+    } else {
+      extraSticky = 10;
+    }
+
+    function myFunction() {
+      if (window.pageYOffset > sticky - extraSticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+</body>
+</html>

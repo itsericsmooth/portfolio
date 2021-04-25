@@ -21,24 +21,40 @@
       <h3 class="port">SMITH</h3>
       <h3 class="port">PORTFOLIO</h3>
     </div>
+    <div class="blackLineExtra"></div>
     <div class="about">
-      <h1>Hi, I'm Eric.</h1>
-      <p class="bio">In addition to that, I am a UI designer and developer. This here is my portfolio.</p>
+      <h1>Hi, I'm Eric!</h1>
+      <p class="bio">Here's what that means for you: a user interface designer & developer who is dedicated to exploring the intersection between function and form. I bring empathy and an eye for details to my skills in user experience, graphic design, and creative coding. <a class="link" href="mailto: mrericthesmith@gmail.com" target="_blank" rel="noopener noreferrer">Contact me</a> if I sound like someone you need on your team!</p>
     </div>
     <div class = "VblackLine">
       <h3 class = "verText">UI DESIGNER & DEVELOPER</h3></div>
-      <div class="HblackLineC"><h3>WORKS</h3></div>
+      <div class="HblackLineC"><h3>TOOLS</h3></div>
+      <div class="toolsBlock">
+        <img class="toolPic" src="images/html.png">
+        <img class="toolPic" src="images/css.png">
+        <img class="toolPic" src="images/visual.png">
+        <img class="toolPic" src="images/figma.svg">
+        <img class="toolPic" src="images/miro.png">
+        <img class="toolPic" src="images/logic.png">
+        <div class="art">
+          <p>This site was modeled after a public domain book cover designed by legendary Bauhaus instructor L&aacute;szl&oacute; Moholy-Nagy.</p>
+          <a href="https://i.pinimg.com/564x/52/5f/84/525f840c9f26e51b2c0abdd402e5204a.jpg" target="_blank" rel="noopener noreferrer"><img class="" src="images/bauhaus.jpg"></div></a>
+        </div>
+    </div>
     <div class = "blueBlock"></div>
     <div class = "HblackLineB"></div>
     <div class="works">
-      <img class="card" src="images/ed.png">
-      <img class="card" src="images/vyt.png">
-      <img class="card" src="images/bark.png">
+      <a href="postplay.html"><img class="card post" src="images/post.png"></a>
+      <a href="vyt.html"><img class="card vyt" src="images/vyt.png"></a>
+      <a href="edu.html"><img class="card ed" src="images/ed.png"></a>
+      <a href="mario.html"><img class="card mario" src="images/mario.png"></a>
     </div>
   </section>
   <footer>
-    <div class="footerBlackLine"></div>
+    <div class="footerBlackLine"><h3 class="">RESUME</h3></div>
+    
     <section class="bottom">
+      <div class="yellowBottom">
       <ul>
         <li><a href="mailto: mrericthesmith@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a></li>
         <li><a href="https://www.linkedin.com/in/eric-smith-275bb9120/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
@@ -46,8 +62,10 @@
         <li><a href="https://twitter.com/ericthesmith" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
         <li><a href="https://www.instagram.com/itsericsmooth/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
         <li><a href="https://open.spotify.com/artist/0FeB3XN2sHFQuPIeW6xOfr?si=ajxFCA1TS6OaElPvkPUu7g" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></a></i></li>
-    </ul>
-<div>
+      </ul>
+    </div>
+<div class="footerVblackLine"></div>
+<div class="whiteChunk">
     <i class="fas fa-copyright"></i>
     <p>Eric Smith 2021</p>
 </div>
@@ -58,9 +76,16 @@
     
     var header = document.getElementById("myHeader");
     var sticky = header.offsetTop;
+    var extraSticky = 15;
     
+    if (window.innerWidth > 1000) {
+      extraSticky = 5;
+    } else {
+      extraSticky = 10;
+    }
+
     function myFunction() {
-      if (window.pageYOffset > sticky) {
+      if (window.pageYOffset > sticky - extraSticky) {
         header.classList.add("sticky");
       } else {
         header.classList.remove("sticky");

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>   
+<head>
+    <title>Eric Smith Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7da1bfac44.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class = "gridParent">
+    <div class = "redBlock yellow"></div>
+    <div class = "yellowBlock blue"></div>
+    <div class = "header HblackLineA" id = "myHeader">
+      <h3 class="port eric">ERIC</h3>
+      <h3 class="port">SMITH</h3>
+      <h3 class="port">PORTFOLIO</h3>
+    </div>
+    <div class="blackLineExtra"></div>
+    <div class="about">
+        <h1 class="about">Valley Youth Theatre</h1>
+        <h4 class="about">Nonprofit Website Redesign</h4>
+    </div>
+    <div class="study">
+      <h2 class="element">Overview:</h2>
+      <p class="element">In this prototype, I worked with a team to update the website design of a local theatre. We found room for improvement in terms of usability and visual appeal and did our work based on that. We worked closely with a key figure at the theatre to guide our work and learn about which features of their website to focus on.</p>
+      <img class="caseImage element" src="images/vyt-affinity.jpg">
+      <h2 class="element">UX Process:</h2>
+      <p class="element">During user testing of the existing site, we encountered some troubling usability issues, chief among them a functionally invisible button that leads to class registration. Since the global pandemic had left online classes as the theatre’s primary income, this was a huge deal.</p>
+    <img class="caseImage element" src="images/vytbutton.png">
+    <h2 class="element">UI Design:</h2>
+    <img class="caseImage element" src="images/vytbuttongif.gif">
+    <p class="element">I created this hover interaction animation for the three main buttons as a subtle bit of motion to catch the eye without being too distracting. This design paradigm of purposeful visual flair was employed from top to bottom throughout the process. We wanted to keep the theatre’s brand, from its colorful palette to its tasteful typography, completely intact even as we repurposed them according to modern best practices.</p>
+    <img class="caseImage element" src="images/vyt-style.png">
+    <h2 class="element">Conclusion:</h2>
+    <p class="element">Working with the client opened my eyes to how usability concerns can have profound consequences on a business. Prioritizing those concerns was a great way to organize our workflow, and gave us a true sense of the impact this work can make.</p>
+    <img class="caseImage element" src="images/vyt-demo.gif">
+    </div>
+    <div class = "VblackLine">
+      <h3 class = "verText">VALLEY YOUTH THEATRE</h3></div>
+      <div class="HblackLineC"><h3>TOOLS</h3></div>
+      <div class="toolsBlock">
+        <img class="toolPic" src="images/adobe.png">
+        <img class="toolPic" src="images/miro.png">
+      </div>
+    <div class = "blueBlock red"></div>
+    <div class = "HblackLineB"></div>
+    <div class="works">
+      
+    </div>
+  </section>
+  <footer>
+    <div class="footerBlackLine"><h3 class="">RESUME</h3></div>
+    
+    <section class="bottom">
+      <ul>
+        <li><a href="mailto: mrericthesmith@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/eric-smith-275bb9120/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/itsericsmooth" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://twitter.com/ericthesmith" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/itsericsmooth/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://open.spotify.com/artist/0FeB3XN2sHFQuPIeW6xOfr?si=ajxFCA1TS6OaElPvkPUu7g" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></a></i></li>
+    </ul>
+<div class="footerVblackLine"></div>
+<div class="copyright">
+    <i class="fas fa-copyright"></i>
+    <div class="whiteChunk">
+    <p>Eric Smith 2021</p>
+</div></div>
+    </section>
+  </footer>
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    var extraSticky = 15;
+    
+    if (window.innerWidth > 1000) {
+      extraSticky = 5;
+    } else {
+      extraSticky = 10;
+    }
+
+    function myFunction() {
+      if (window.pageYOffset > sticky - extraSticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+</body>
+</html>

@@ -25,7 +25,7 @@
     grid-column: 1 / 13;
     max-height: 2vw;
     min-height: 30px;
-    z-index: 2;
+    z-index: 200;
   }
 
   .sticky {
@@ -57,6 +57,34 @@
     grid-column: 9 / 13;
   }
   
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.white {
+   background-color: white;
+}
+
+.study {
+  grid-row: 12/30;
+  grid-column: 3/9;
+  margin: 30px;
+
+}
+
+.element {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
   .VblackLine {
     display: flex;
     justify-content: space-evenly;
@@ -66,7 +94,7 @@
     grid-column: 9 / 10;
     min-width: 30px;
     max-width: 2vw;
-    z-index: 3;
+    z-index: 201;
     padding-top: 3vh;
   }
   
@@ -81,22 +109,50 @@
     z-index: 2;
   }
 
+  .toolsBlock {
+    grid-row: 15/28;
+    grid-column: 9/13;
+    display: grid;
+    grid-template-rows: 7vw 7vw 7vw 7vw;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .toolPic {
+    height: 10vh;
+    margin-left: 7vw;
+  }
+
+  .art {
+    padding-top: 5vw;
+    grid-column: 1/3;
+    margin-left: 50px;
+    margin-right: 20px
+  }
+
+  .art img {
+    max-width: 96%;
+    margin-top: 30px;
+  }
+
   .works {
     display: flex;
     flex-direction: column;
-    grid-row: 14 / 24;
-    grid-column: 9 / 13;
+    grid-row: 13 / 24;
+    grid-column: 4 / 9;
+    margin-right: 50px;
   }
 
   .card {
-    max-width: 96%;
-    margin-left: 30px;
+    border: 1px solid black;
+    max-width: 97%;
+    justify-items: center;
+    margin: 0px 30px 30px 30px;
   }
 
   .about {
     background-color: white;
-    grid-row: 9 / 23;
-    grid-column: 1 / 9;
+    grid-row: 10 / 23;
+    grid-column: 1 / 4;
   }
 
   .footerBlackLine {
@@ -109,15 +165,43 @@
 
   .footerVblackLine {
     background-color: black;
-    grid-row: 1
+    z-index: 3;
+    width: 30px;
+    grid-row: 1/2;
+    grid-column: 9/10;
   }
   
+  .whiteChunk {
+    background-color: white;
+    grid-row: 1/2;
+    grid-column: 9/13;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
 h1 {
   font-family: "Quicksand", sans-serif;
-  font-weight: 100;
-  font-size: 10vh;
-  margin: 2vw;
+  font-weight: 300;
+  font-size: 7vh;
+  overflow-x: visible;
+}
+
+.about h1 {
   margin-top: 5vw;
+  margin: 0vw 2vw 0.5vw 2vw;
+}
+
+.about h4 {
+  margin: 0vw 2vw 0.5vw 2vw;
+}
+
+h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  
 }
 
   h3 {
@@ -131,15 +215,27 @@ h1 {
     letter-spacing: 0.68em;
   }
 
+h4 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
   p {
     font-family: "Quicksand", sans-serif;
     font-weight: 100;
   }
   
-.bio {
-  font-size: 2vh;
-  margin: 2vw;
+.link {
+  color: blue;
+  text-decoration: none;
 }
+
+.bio {
+  margin: 2vw;
+  font-size: 1em;
+}
+
 
   .verText {
     transform: rotate(270deg);
@@ -149,7 +245,7 @@ h1 {
     max-height: 2vw;
     position: fixed;
     z-index: 20;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.35em;
   }
   
   .port {
@@ -158,22 +254,36 @@ h1 {
 
 
   .bottom {
-    display: flex;
-    background-color: yellow;
-    height: 15vh;
+    display: grid;
     width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20vh;
+  }
+
+  .yellowBottom {
+    background-color: yellow;
+    grid-column: 1/9;
+    grid-row: 1/2;
   }
 
   ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    justify-content: flex-end;
+    grid-column: 7/9;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 30px 0px 0px;
+
   }
 
   i {
     color: black;
-    
+    font-size: 1.2em;
+  }
+
+  .fa-copyright {
+    padding-right: 10px;
   }
   
   @media only screen and (max-width: 1000px) {
@@ -196,19 +306,56 @@ h1 {
     .about {
       grid-column: 1 / 2;
       grid-row: 9 / 13;
+      justify-self: center;
+      align-self: center;
+    }
+
+    .study {
+      grid-column: 1/2;
+      grid-row: 17/30;
+      overflow: auto;
+    }
+
+    .blackLineExtra {
+      grid-column: 1 / 2;
+      grid-row: 17/18;
+      display: flex;
+      justify-content: space-evenly;
+      background-color: black;
+      max-height: 2vw;
+      min-height: 30px;
+      z-index: 100;
+    }
+
+    .works {
+      grid-column: 1 / 2;
+      grid-row: 17 / 30;
+      justify-self: center;
+      margin-right: 0px;
+    }
+
+    .toolsBlock {
+      margin-top: 50px;
+    }
+
+    .toolPic {
+      height: 5vh;
+      margin-left: 8vw;
     }
 
     .HblackLineB {
-      background-color: black;
       grid-column: 1 / 2;
       grid-row: 13 / 14;
-      max-height: 2vw;
-      min-height: 30px;
     }
 
     .HblackLineC {
       grid-column: 1 / 2;
-      grid-row: 17 / 18;
+      grid-row: 30 / 31;
+    }
+
+    .toolsBlock {
+      grid-row: 30/35;
+      grid-column: 1/2;
     }
     
     .yellowBlock {
@@ -224,14 +371,8 @@ h1 {
       grid-column: 1 / 2;
     }
 
-    .card {
-      grid-column: 1 / 2;
-      grid-row: 17 / 30;
-    }
-    
-    div {
-      display: grid;
-      width: 100vw;
+    .footerVblackLine {
+      grid-column: 1/2;
     }
     
     .port {
@@ -243,13 +384,29 @@ h1 {
     .eric {
       margin-left: 30px;
     }
-
-    .works {
-      grid-column: 1 / 2;
-    }
     
-    h1, .bio {
+    .about h1, .bio {
       margin-left: 55px;
+    }
+
+    .card {
+      height: auto;
+      margin-right: 0px;
+    }
+
+    ul {
+      grid-column: 2/4;
+      align-items
+    }
+
+    .whiteChunk {
+      background-color: none;
+      grid-row: 1/2;
+      grid-column: 4/5;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
     }
 
   }

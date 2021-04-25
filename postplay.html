@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>   
+<head>
+    <title>Eric Smith Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7da1bfac44.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class = "gridParent">
+    <div class = "redBlock blue"></div>
+    <div class = "yellowBlock"></div>
+    <div class = "header HblackLineA" id = "myHeader">
+      <h3 class="port eric">ERIC</h3>
+      <h3 class="port">SMITH</h3>
+      <h3 class="port">PORTFOLIO</h3>
+    </div>
+    <div class="blackLineExtra"></div>
+    <div class="about">
+        <h1 class="about">Post/Play</h1>
+        <h4 class="about">App Concept Design</h4>
+    </div>
+    <div class="study">
+      <h2 class="element">Overview:</h2>
+      <p class="element">While working on Post/Play, we often referred to the basic idea as “Goodreads for games”, which guided our design from ideation through execution. And that’s exactly what it is: a social platform with the narrow focus of reviewing and discussing a specific type of media.</p>
+      <h2 class="element">UX Process:</h2>
+      <p class="element">With several interviews and a survey conducted, our original hypothesis was reinforced: avid video game players mostly rely on their friend groups for news and recommendations. One of the primary reasons given was a belief that the online “gamer community” is generally toxic and should be avoided. Keeping this in mind, we worked on gearing the experience toward more self-curated groups in order to both highlight the opinions that actually matter to the user and keep out a negative element. To my mind, this was one of those beautiful design solutions that would normally provoke the use of an idiom that promotes violence against birds.</p>
+    <img class="caseImage element" src="images/postplay-wire.png">
+    <h2 class="element">UI Design:</h2>
+    <p class="element">There was a brief flirtation with a design that would alternate the cover art between the right and left side of the card, but ultimately I was able to convince the team away from that unmotivated change in favor of a more consistent layout. This was only one of our many iterations to the design as we slowly figured out how best to approach the idea. In the end, the tried and true methods of user testing, incremental changes, and team brainstorming are what got us to the finish line with a product we could be proud of. </p>
+    <img class="caseImage element" src="images/postplay-cards.png">
+    <h2 class="element">Development: </h2>
+    <p class="element">Since card design is the essential element in our layout, that was what I focused on developing first. Taking care to adhere as closely to our design as possible, I decided to utilize the robust control and flexibility offered by CSS Grid. Its unique responsive capabilities made out the perfect choice to develop our design.</p>
+    <img class="caseImage element" src="images/postplay-dev-progress.png">
+    <h2 class="element">Conclusion:</h2>
+    <p class="element">Personally I enjoyed this project and found a lot of potential in it. In the future I plan to return to this idea and take it from a case study on my portfolio to a full-fledged product. With more time to flesh out the user flows and information architecture I think Post/Play could hit with its intended audience.</p>
+    <img class="caseImage element" src="images/postplay-iteration.png">
+    </div>
+    <div class = "VblackLine">
+      <h3 class = "verText">POST/PLAY</h3></div>
+      <div class="HblackLineC"><h3>TOOLS</h3></div>
+      <div class="toolsBlock">
+        <img class="toolPic" src="images/html.png">
+        <img class="toolPic" src="images/css.png">
+        <img class="toolPic" src="images/visual.png">
+        <img class="toolPic" src="images/figma.svg">
+        <img class="toolPic" src="images/miro.png">
+      </div>
+    <div class = "blueBlock red"></div>
+    <div class = "HblackLineB"></div>
+    <div class="works">
+      
+    </div>
+  </section>
+  <footer>
+    <div class="footerBlackLine"><h3 class="">RESUME</h3></div>
+    
+    <section class="bottom">
+      <ul>
+        <li><a href="mailto: mrericthesmith@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/eric-smith-275bb9120/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/itsericsmooth" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://twitter.com/ericthesmith" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/itsericsmooth/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://open.spotify.com/artist/0FeB3XN2sHFQuPIeW6xOfr?si=ajxFCA1TS6OaElPvkPUu7g" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></a></i></li>
+    </ul>
+<div class="footerVblackLine"></div>
+<div class="copyright">
+    <i class="fas fa-copyright"></i>
+    <div class="whiteChunk">
+    <p>Eric Smith 2021</p>
+</div></div>
+    </section>
+  </footer>
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    var extraSticky = 15;
+    
+    if (window.innerWidth > 1000) {
+      extraSticky = 5;
+    } else {
+      extraSticky = 10;
+    }
+
+    function myFunction() {
+      if (window.pageYOffset > sticky - extraSticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+</body>
+</html>
