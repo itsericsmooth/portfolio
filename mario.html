@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>   
+<head>
+    <title>Eric Smith Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7da1bfac44.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class = "gridParent">
+    <div class = "redBlock yellow"></div>
+    <div class = "yellowBlock red"></div>
+    <div class = "header HblackLineA" id = "myHeader">
+      <h3 class="port eric">ERIC</h3>
+      <h3 class="port">SMITH</h3>
+      <h3 class="port">PORTFOLIO</h3>
+    </div>
+    <div class="blackLineExtra"></div>
+    <div class="about">
+        <h1 class="about">Desert Solitaire</h1>
+        <h4 class="about">Super Mario Maker 2 World</h4>
+    </div>
+    <div class="study">
+        <img class="caseImage element" src="images/mario-world.PNG">
+        <h4 class="element">Maker ID: 5NY-M5T-8VF</h4>
+        <ol class="element">
+            <li>Timeline: Three weeks</li>
+            <li>Team: Eric Smith</li>
+            <li>Tools: Mario Maker level editor</li>
+        </ol>
+      <h2 class="element">Overview:</h2>
+      <p class="element">The levels in this world were created as part of an ongoing Mario Maker level competition in which last week’s winner picks a theme, becomes the judge for next week, and so on. This world started when the group was encouraged to read a seminal piece of nature writing on the American West.</p>
+      <img class="caseImage element" src="images/mario-first.PNG">
+      <h2 class="element">Dessert Sudoku</h2>
+      <p class="element">To create this level I wanted to give it my all, so I went the extra mile and read the entire book that week, taking down quotes of anything I thought could be inspiring.</p>
+      <p class="element quote">”First descent into The Maze,” writes Waterman in the book, though we cannot be absolutely certain of this. And I write, “For God’s sake leave this country alone - Abbey.” To which Waterman adds “For Abbey’s sake leave this country alone - God.”</p>
+      <p>-Edward Abbey, <cite>Desert Solitaire</cite></p>      
+    <p class="element">This anecdote caught my attention both as a humorous turn of phrase and as an idea for my level. There are no breakable blocks, no enemies you can hurt by landing on, just beautiful and dangerous desert. Leave it alone.</p>
+      <img class="caseImage element" src="images/mario-cake.png">
+    <h2 class="element">Designed Jumble</h2>
+    <h4 class="element">Theme: Use bouncy items without being annoying</h4>
+    <p class="element">These music blocks turned out to be a nice complement to the duck-slide mechanic, as it was now possible to move up while sliding. The variety this introduced lent itself to a more elaborate stage design, with multiple paths that often criss-cross each other.</p>
+    <img class="caseImage element" src="images/mario-jump.png">
+    <p class="element">While avoiding going too “auto-Mario” with it, I like to give the player the appearance of a lot going on without too many inputs. Don’t tell anyone, but most of my levels can be beat by simply running to the right and jumping at the right time. </p>
+    <h2 class="element">Conclusion:</h2>
+    <p class="element">Making Mario levels is much like any other design project: research (a lifetime of playing and analyzing Mario), testing, and iteration are at least as important as the actual ideas and construction of the level. Taking a page out of the Nintendo playbook and building upon a single mechanic was both challenging and rewarding, and I’m very proud of the levels that came out of it.</p>
+    <img class="caseImage element" src="images/mario.gif">
+    <div class="element bottomLinks">
+        <a href="postplay.html"><img class="smallCard post" src="images/post.png"></a>
+        <a href="vyt.html"><img class="smallCard vyt" src="images/vyt.png"></a>
+        <a href="edu.html"><img class="smallCard ed" src="images/ed.png"></a>
+    </div></div>
+      <div class = "blueBlock"></div>
+    <div class = "HblackLineB"></div>
+    <div class="HblackLineC"></div>
+    <div class = "VblackLine">
+        <h3 class = "verText">DESERT SOLITAIRE</h3>
+      </div>
+  </section>
+  <footer>
+    <div class="footerBlackLine"><h3 class="">RESUME</h3></div>
+    
+    <section class="bottom">
+      <ul>
+        <li><a href="mailto: mrericthesmith@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/eric-smith-275bb9120/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/itsericsmooth" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://twitter.com/ericthesmith" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/itsericsmooth/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://open.spotify.com/artist/0FeB3XN2sHFQuPIeW6xOfr?si=ajxFCA1TS6OaElPvkPUu7g" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></a></i></li>
+    </ul>
+<div class="footerVblackLine"></div>
+<div class="copyright">
+    <i class="fas fa-copyright"></i>
+    <div class="whiteChunk">
+    <p>Eric Smith 2021</p>
+</div></div>
+    </section>
+  </footer>
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    var extraSticky = 15;
+    
+    if (window.innerWidth > 1000) {
+      extraSticky = 5;
+    } else {
+      extraSticky = 10;
+    }
+
+    function myFunction() {
+      if (window.pageYOffset > sticky - extraSticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+</body>
+</html>
