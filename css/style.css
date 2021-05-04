@@ -392,11 +392,11 @@ h4 {
       grid-row: 16 / 26;
       justify-self: center;
       margin-right: 0px;
-      margin-top: 30px;
+      margin-top: 60px;
     }
 
     .card {
-      width: calc(100% - 32px);
+      width: calc(100% - 30px);
       margin: 0px 0px 30px 30px;
       border-style: solid none none;
     }
