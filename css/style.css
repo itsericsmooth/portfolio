@@ -256,7 +256,7 @@ h2 {
 
 h4 {
   font-family: "Quicksand", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: 300;
 }
 
@@ -500,4 +500,15 @@ h4 {
 
   }
   
+  @media only screen and (min-width: 1500px) {
+
+    .art {
+      margin-left: 8vw;
+      margin-right: 8vw;
+    }
   
+    .art img {
+      max-height: 500px;
+      margin-top: 30px;
+    }
+  }
