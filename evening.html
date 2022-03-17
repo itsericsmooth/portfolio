@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>   
+<head>
+    <title>Eric Smith Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7da1bfac44.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class = "gridParent">
+    <div class = "redBlock"></div>
+    <div class = "yellowBlock blue"></div>
+    <div class = "header HblackLineA" id = "myHeader">
+      <h3 class="port eric">ERIC</h3>
+      <h3 class="port">SMITH</h3>
+      <h3 class="port">PORTFOLIO</h3>
+    </div>
+    <div class="blackLineExtra"></div>
+    <div class="caseHead">
+        <h1 class="caseHead">An Evening with Eric Smooth</h1>
+        <h4 class="caseHead">Event Design</h4>
+    </div>
+    <div class="study">
+      <ol class="element">
+        <li>Timeline: One month</li>
+        <li>Team: Eric Smith</li>
+        <li>Tools: Figma</li>
+    </ol>
+      <h2 class="element">Overview:</h2>
+      <p class="element">The entire concept of putting on a concert inside a movie theater evolved around an early onset case of grumpiness. Finding it more and more difficult to enjoy live music as my body and mind rapidly age, I knew when it came time to put on a show of my own, it had to fix all the problems I have with them.</p>
+      <img class="caseImage element" src="images/evening-photo.png">
+      <h2 class="element">UX Process:</h2>
+      <p class="element">This event was approached from a UX perspective with the express purpose of creating the best possible experience for the audience. Bumps in the road like unexpected fees, parking meters, and having to leave the performance to get a drink were carefully avoided.</p>
+      <img class="caseImage element" src="images/evening-problems.png">
+      <p class="element">Many of these problems instantly solved themselves with the simple act of changing the type of venue. These minor annoyances often add up to a poor experience of an event, and most if not all of them are already improved by another industry: movie theaters.</p>
+    <h2 class="element">Graphic Design:</h2>
+    <img class="caseImage element" src="images/evening-posts.png">
+    <p class="element">With a broad theme of “The Movies” in mind, I began my social media marketing campaign to get the word out. First step was choosing a font that communicated everything I love about them: the history, the evolution of modern styles, the fun, the heightened experience of it all. To say all this I chose a font called Exo in Black weight and a bright rose color. </p>
+    <p class="element">Next I pulled relevant screenshots, used consistent messaging and design for the basics, and sold the concept on Instagram based on a playful sense of humor. Once I had this design language established, I went ahead and designed personalized tickets in the exact shape and size of the smartphone screens they would be showing them from. </p>
+    <img class="caseImage element" src="images/evening-tickets.png">
+    <h2 class="element">Conclusion:</h2>
+    <p class="element">Putting on this event challenged me in every way, but fortunately my guitar skills are not on trial here today. The UX and graphic design leading up to the actual performance were crucial to selling the novel idea, and I believe ultimately the reason for its success. I’ve been to hundreds of shows and I’m certain very few of them have given much thought to the actual audience experience of seeing the band. Unsurprisingly, I fondly remember the ones that did, and it was my explicit goal to bring that care and attention to detail to my own. </p>
+    <img class="caseImage element" src="images/evening-flyer.png">
+    <div class="element bottomLinks">
+      <a href="vyt.html"><img class="smallCard vyt" src="images/vyt.png"></a>
+      <a href="postplay.html"><img class="smallCard post" src="images/post.png"></a>
+      <a href="mario.html"><img class="smallCard ed" src="images/mario.png"></a>
+  </div>
+  <a class="link right" href="index.html"><p>Home>></p></a>
+    </div>
+    <div class = "VblackLine">
+      <h3 class = "verText">EVENING WITH</h3></div>
+      <div class="HblackLineC"></div>
+    <div class = "blueBlock yellow"></div>
+    <div class = "HblackLineB"></div>
+  </section>
+  <footer>
+    <div class="footerBlackLine"></div>
+    <section class="bottom">
+      <div class="yellowBottom">
+      <ul>
+        <li><a href="mailto: mrericthesmith@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/eric-smith-275bb9120/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/itsericsmooth" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://open.spotify.com/artist/0FeB3XN2sHFQuPIeW6xOfr?si=ajxFCA1TS6OaElPvkPUu7g" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></a></i></li>
+        <li><a href="Eric Smith UI Resume.pdf" target="_blank" rel="noopener noreferrer"><button>RESUME</button></a></li>
+      </ul>
+    </div>
+<div class="fvblLeft"></div>
+<div class="footerVblackLine"></div>
+<div class="whiteChunk">
+    <i class="fas fa-copyright"></i>
+    <p>Eric Smith 2021 - 2022</p>
+</div>
+    </section>
+  </footer>
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    var extraSticky = 15;
+    
+    if (window.innerWidth > 1000) {
+      extraSticky = 5;
+    } else {
+      extraSticky = 10;
+    }
+
+    function myFunction() {
+      if (window.pageYOffset > sticky - extraSticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+</body>
+</html>
