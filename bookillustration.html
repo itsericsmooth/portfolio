@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html>   
+<head>
+    <title>Eric Smith Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7da1bfac44.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class = "gridParent">
+    <div class = "redBlock"></div>
+    <div class = "yellowBlock blue"></div>
+    <div class = "header HblackLineA" id = "myHeader">
+      <h3 class="port eric">ERIC</h3>
+      <h3 class="port">SMITH</h3>
+      <h3 class="port">PORTFOLIO</h3>
+    </div>
+    <div class="blackLineExtra"></div>
+    <div class="caseHead">
+        <h1 class="caseHead">Nonfiction Book</h1>
+        <h4 class="caseHead">Graphic Illustrations</h4>
+    </div>
+    <div class="study">
+      <ol class="element">
+        <li>Timeline: Two weeks</li>
+        <li>Team: Eric Smith</li>
+        <li>Tools: Figma</li>
+    </ol>
+      <h2 class="element">Overview:</h2>
+      <p class="element">The commission was relatively simple: take a handful of graphs and convert them into one unified graphic style for print in a nonfiction book. Specifically a “simple, hand-drawn, clean and consistent” was requested by the client. </p>
+      <img class="caseImage element" src="images/KS3.jpg">
+      <h2 class="element">Graphic Design:</h2>
+      <p class="element">In order to achieve the desired “hand-drawn” I did exactly that: I drew it with my hands. With a mechanical pencil and a ruler I methodically drew out lines, arrows, bars and dots that would become pieces to reassemble into these graphs. When scanned at a high resolution, these pencil lines have a naturally occurring give and take to the edges. Using the pen tool in Figma, I traced around my pencil lines to recreate the natural feeling of hand-drawn lines in a more precise and manipulable digital environment.</p>
+    <img class="caseImage element" src="images/KS1.jpeg">
+    <h2 class="element">UX Process:</h2>
+    <p class="element">An illustrated graph requires a comparatively UX-heavy approach to graphic design, which is part of what appealed to me about this project. Taking several different types of graphs at various levels of complexity and distilling them into one unified and readable style was the name of the game here. The first step was to find the best way to represent all these different ideas using only line work and only in black and white.</p>
+    <img class="caseImage element" src="images/KS2.png">
+    <h2 class="element">Conclusion:</h2>
+      <p class="element"><a href="https://lioncrest.com/books/a-fire-to-be-kindled/" target="_blank" rel="noopener noreferrer"><em>A Fire to Be Kindled </em></a> is available now at a book seller near you, and features my versions of the graphs. My client for this project, its author Kelly Smith, myself, and his publisher were all very satisfied with how they turned out.</p>
+    <img class="caseImage element" src="images/KS3.jpg">
+    <div class="element bottomLinks">
+      <a href="vyt.html"><img class="smallCard vyt" src="images/vyt.png"></a>
+      <a href="postplay.html"><img class="smallCard post" src="images/post.png"></a>
+      <a href="mario.html"><img class="smallCard ed" src="images/mario.png"></a>
+  </div>
+  <a class="link right" href="index.html"><p>Home>></p></a>
+    </div>
+    <div class = "VblackLine">
+      <h3 class = "verText">BOOK ILLUSTRATIONS</h3></div>
+      <div class="HblackLineC"></div>
+    <div class = "blueBlock yellow"></div>
+    <div class = "HblackLineB"></div>
+  </section>
+  <footer>
+    <div class="footerBlackLine"></div>
+    <section class="bottom">
+      <div class="yellowBottom">
+      <ul>
+        <li><a href="mailto: mrericthesmith@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/eric-smith-275bb9120/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/itsericsmooth" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://open.spotify.com/artist/0FeB3XN2sHFQuPIeW6xOfr?si=ajxFCA1TS6OaElPvkPUu7g" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></a></i></li>
+        <li><a href="Eric Smith UI Resume.pdf" target="_blank" rel="noopener noreferrer"><button>RESUME</button></a></li>
+      </ul>
+    </div>
+<div class="fvblLeft"></div>
+<div class="footerVblackLine"></div>
+<div class="whiteChunk">
+    <i class="fas fa-copyright"></i>
+    <p>Eric Smith 2021 - 2023</p>
+</div>
+    </section>
+  </footer>
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    var extraSticky = 15;
+    
+    if (window.innerWidth > 1000) {
+      extraSticky = 5;
+    } else {
+      extraSticky = 10;
+    }
 
+    function myFunction() {
+      if (window.pageYOffset > sticky - extraSticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+</body>
+</html>
