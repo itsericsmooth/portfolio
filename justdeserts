@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>   
+<head>
+    <title>Eric Smith Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7da1bfac44.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class = "gridParent">
+    <div class = "redBlock yellow"></div>
+    <div class = "yellowBlock red"></div>
+    <div class = "header HblackLineA" id = "myHeader">
+      <h3 class="port eric">ERIC</h3>
+      <h3 class="port">SMITH</h3>
+      <h3 class="port">PORTFOLIO</h3>
+    </div>
+    <div class="blackLineExtra"></div>
+    <div class="caseHead">
+        <h1 class="caseHead">Just Deserts!</h1>
+        <h4 class="caseHead">Video Game</h4>
+    </div>
+    <div class="study">
+        <img class="caseImage element" src="images/Ink_MainCapsule_3x.png">
+        <ol class="element">
+            <li>Timeline: One month</li>
+            <li>Team: Eric Smith</li>
+            <li>Tools: Figma, Adobe Fresco, Unity</li>
+        </ol>
+      <h2 class="element">Overview:</h2>
+      <p class="element">This project began as an exercise to familiarize myself with more of the tools in Unity, approaching game development from a more holistic point of view. I had a realization that any tool I’m effective at using (be it visual design software, digital audio workstations, or a toothbrush), I got to that level by simply using the tool every day. So with that in mind, and a silly, low-pressure project to work on, I set out to design and create every aspect of a video game. This included learning and creating art, animations, music, writing, game & level design, and programming all in service of a small game based on a Star Wars themed webcomic called <i>The Baron and the Junk Dealer</i> by comedian Connor Ratliff. </p>
+      <h2 class="element">Design Process</h2>
+      <p class="element">The first step in designing was figuring out what style of game this should be. Pretty quickly I landed on a search action (aka Metroidvania) platformer due to the 2D characters and light adventure setting. The idea of a 2D game world being kind of a “lampshade” that returns back to where it started has always been very appealing to me, and in this case I thought could alleviate some of the backtracking issues inherent to the genre. </p>
+      <img class="caseImage element" src="images/ink paper.png">
+    <p class="element">One of the main things I wanted to get right was to convey the dark humor of the source material not only in the look and dialogue, but in the gameplay itself. This came up primarily through the power-up concepts, such as “Give Up”, which allows the player to fall down on the ground and worm around under low ceilings, effectively a depressed man’s version of Samus’s morph ball.</p>
+      <img class="caseImage element" src="images/ink wire.png">
+    <h2 class="element">Art & Animation</h2>
+      <img class="caseImage element" src="images/ink assembly.png">
+    <p class="element">To create the art style for the game, I naturally had to expand a little bit from the static, black and white strip. Coming up with a color palette was simple enough– the setting is a small desert planet in outer space so a blue/orange vibe seemed fitting. Getting these characters into motion was a more open ended challenge. After some trial and error with different styles, the one I landed on was inspired by the shuffle-walk animations that first brought the <i>Peanuts</i> gang to life in the old TV specials. Since the creator of the comic is a fan of those specials, I figured it would be double fitting.</p>
+    <h2 class="element">Conclusion:</h2>
+    <p class="element">The experiment, I think, was successful in that it immediately helped me to better understand where UI design fits into the complete vision. That is to say, it clarified the role of UI designer as part of a larger whole. It’s less of a strict assets game, although that is a factor, and more of a holistic design approach. The player’s experience is ultimately what they have paid for and what they are devoting time to, so that should be thoughtfully crafted. To the extent that it is appropriate for a UI designer on the team to be involved in, this particular brand of design thinking could be extremely useful on many levels.</p>
+  <p class="element">While at the end of the day I got caught up with other personal and professional projects, I still would like to go back and finish this game. Even in its current unfinished state, the comic’s creator enjoyed what was done and even sent some ideas for where to go with it and how to stay consistent with the world. This brief collaboration was very exciting and fruitful, as I don’t think I would have landed on “drinking pee” on my own.</p>      
+<img class="caseImage element" src="images/inkscreen.png">
+    <div class="element bottomLinks">
+        <a href="postplay.html"><img class="smallCard post" src="images/post.png"></a>
+        <a href="mario.html"><img class="smallCard mario" src="images/mario.png"></a>
+        <a href="bookillustration.html"><img class="smallCard" src="images/book.png"></a>
+    </div>
+    <a class="link right" href="index.html"><p>Home>></p></a>
+  </div>
+      <div class = "blueBlock"></div>
+    <div class = "HblackLineB"></div>
+    <div class="HblackLineC"></div>
+    <div class = "VblackLine">
+        <h3 class = "verText">JUST DESERTS!</h3>
+      </div>
+  </section>
+  <footer>
+    <div class="footerBlackLine"></div>
+    <section class="bottom">
+      <div class="yellowBottom">
+      <ul>
+        <li><a href="mailto: mrericthesmith@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/eric-smith-275bb9120/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/itsericsmooth" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://open.spotify.com/artist/0FeB3XN2sHFQuPIeW6xOfr?si=ajxFCA1TS6OaElPvkPUu7g" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></a></i></li>
+        <li><a href="Eric Smith Resume 2025.pdf" target="_blank" rel="noopener noreferrer"><button>RESUME</button></a></li>
+      </ul>
+    </div>
+<div class="fvblLeft"></div>
+<div class="footerVblackLine"></div>
+<div class="whiteChunk">
+    <i class="fas fa-copyright"></i>
+    <p>Eric Smith 2025/p>
+</div>
+    </section>
+  </footer>
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    var extraSticky = 15;
+    
+    if (window.innerWidth > 1000) {
+      extraSticky = 5;
+    } else {
+      extraSticky = 10;
+    }
+
+    function myFunction() {
+      if (window.pageYOffset > sticky - extraSticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+</body>
+</html>
